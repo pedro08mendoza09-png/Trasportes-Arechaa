@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transporte Arecha</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9fafb; color: #1f2937; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    header img { height: 60px; }
+    nav a { margin: 0 15px; text-decoration: none; font-weight: bold; color: #1f2937; transition: 0.3s; }
+    nav a:hover { color: #f97316; }
+    .btn { background: #f97316; color: white; padding: 10px 20px; border-radius: 20px; border: none; cursor: pointer; font-weight: bold; transition: 0.3s; }
+    .btn:hover { background: #ea580c; }
+    .hero { text-align: center; padding: 80px 20px; background: linear-gradient(to right, #1e3a8a, #2563eb); color: white; }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { max-width: 600px; margin: auto; font-size: 1.2rem; margin-bottom: 30px; }
+    .section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    .section h2 { text-align: center; font-size: 2rem; color: #1e3a8a; margin-bottom: 40px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s; text-align: center; }
+    .card:hover { transform: translateY(-5px); }
+    .about { background: #f3f4f6; text-align: center; padding: 60px 20px; }
+    form { max-width: 500px; margin: auto; display: grid; gap: 15px; }
+    input, textarea { padding: 12px; border-radius: 10px; border: 1px solid #d1d5db; font-size: 1rem; }
+    footer { background: #1e3a8a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img src="logo.png" alt="Logo TransFletes Express">
+      <h1 style="color:#1e3a8a;">Transporte Arecha</h1>
+    </div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="cotizacion1.html" class="btn">Cotizar ahora</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Tu carga, nuestro compromiso</h1>
+    <p>Ofrecemos soluciones de transporte y logística rápidas, seguras y confiables para todo México.</p>
+    <button class="btn" onclick="window.location.href='cotizacion1.html'">
+  ¡Haz tu envío hoy!
+</button>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section">
+    <h2>Nuestros Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Fletes locales</h3>
+        <p>Transporte ágil dentro de tu ciudad con la seguridad que necesitas.</p>
+      </div>
+      <div class="card">
+        <h3>Fletes nacionales</h3>
+        <p>Cubrimos rutas en todo México con puntualidad y eficiencia.</p>
+      </div>
+      <div class="card">
+        <h3>Logística empresarial</h3>
+        <p>Soluciones a la medida para empresas con necesidades constantes de transporte.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="about">
+    <h2>¿Quiénes somos?</h2>
+    <p>En <strong>Transporte Arecha</strong> contamos con años de experiencia en transporte y logística, garantizando seguridad, puntualidad y confianza en cada envío. Nuestra misión es que tu carga llegue siempre a tiempo.</p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <h2>Contáctanos</h2>
+    <form action="https://formspree.io/f/mblnpknb" method="POST">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea rows="4" placeholder="Mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+    <h2>tambien puedes marcar al +52 55 6896 8118 Trasportes Arecha </h2>
+    <h2>Whatsapp o Llamdas </h2>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    © <script>document.write(new Date().getFullYear());</script> Transporte Arecha. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

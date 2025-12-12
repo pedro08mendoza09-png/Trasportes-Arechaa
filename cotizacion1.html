@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotización - Transporte Arecha</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9fafb; color: #1f2937; }
+    header { background: #1e3a8a; padding: 20px; text-align: center; color: white; }
+    header h1 { margin: 0; font-size: 2rem; }
+    .container { max-width: 700px; margin: 40px auto; background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h2 { text-align: center; color: #1e3a8a; margin-bottom: 20px; }
+    form { display: grid; gap: 15px; }
+    label { font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 10px; font-size: 1rem; }
+    textarea { resize: none; }
+    .btn { background: #f97316; color: white; padding: 12px; border: none; border-radius: 10px; font-size: 1rem; cursor: pointer; transition: 0.3s; }
+    .btn:hover { background: #ea580c; }
+    footer { text-align: center; margin-top: 40px; padding: 20px; background: #1e3a8a; color: white; }
+    a { color: #f97316; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+<header>
+    <h1>Transporte Arecha</h1>
+    <p>Solicita tu cotización</p>
+  </header>
+  <!-- Formulario de Cotización -->
+<div class="container">
+    <h2>Formulario de Cotización</h2>
+    <form id="formCotizacion" action="https://formspree.io/f/mblnpknb" method="post">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+      <label for="tipo">Tipo de carga</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Seleccione...</option>
+        <option value="general">Carga general</option>
+        <option value="fragil">Carga frágil</option>
+        <option value="voluminosa">Carga voluminosa</option>
+        <option value="refrigerada">Carga refrigerada</option>
+      </select>
+
+      <label for="origen">Ciudad de origen</label>
+      <input type="text" id="origen" name="origen" placeholder="Ejemplo: Guadalajara" required>
+
+      <label for="destino">Ciudad de destino</label>
+      <input type="text" id="destino" name="destino" placeholder="Ejemplo: Monterrey" required>
+
+      <label for="peso">Peso aproximado (kg)</label>
+      <input type="number" id="peso" name="peso" placeholder="Ejemplo: 500" required>
+
+      <label for="comentarios">Comentarios adicionales</label>
+      <textarea id="comentarios" name="comentarios" rows="4" placeholder="Especificaciones del envío"></textarea>
+
+      <button type="submit" class="btn">Solicitar cotización</button>
+    </form>
+    <p style="margin-top:15px; text-align:center;">
+      <a href="index1.html">← Volver a la página principal</a>
+    </p>
+</div>
+  <!-- Footer -->
+<footer>
+    © <script>document.write(new Date().getFullYear());</script> TransFletes Express. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
